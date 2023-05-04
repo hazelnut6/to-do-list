@@ -1,3 +1,19 @@
 <%- include('header'); -%>
-<h1>Hello</h1>
+<h1>Checkout</h1>
+
+<div class="aboutStyle">
+    <div>
+        <ul>
+            <% for (let i=0; i<addedItem.length; i++) { %>
+                <li id="book"> <%= addedItem [i] %> </li>
+            <% } %>
+        </ul>
+    </div>
+    <div>
+        <%- include('pricing'); -%>
+    </div>
+</div>
+    <div id="btnBuy">
+        <button>Buy Now!</button>
+    </div>
 <%- include('footer'); -%>

@@ -1,7 +1,7 @@
 body {
     background-image: url("https://wallpapercave.com/wp/wp2036944.jpg");
     background-repeat: no-repeat;
-    background-size: 1200px;
+    background-size: 100vw;
 }
 h1 {
     color: whitesmoke;
@@ -34,7 +34,7 @@ h2 {
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
-li::marker {
+#book::marker {
     content: '📜';
 }
 input {
@@ -44,11 +44,25 @@ input {
 }
 button {
     height: 20px;
-    width: 45px;
     border-radius: 5px;
+    margin-top: 15px;
+    padding: 5px;
     border-style: none;
     background-color: bisque;
 }
 footer {
      color: whitesmoke;
+}
+
+.aboutStyle {
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#btnBuy {
+    margin: auto;
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
