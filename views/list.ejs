@@ -1,0 +1,29 @@
+<%- include('header'); -%>
+    <!-- <%= myDay%> -->
+    <h1>To-be-read Bucket List</h1>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate error officiis, iure eveniet numquam voluptates eligendi! Harum recusandae asperiores placeat minus, maiores quaerat obcaecati odio at sint sequi provident quo?
+        Quo rem exercitationem quaerat eveniet quae quia repellendus eius est vel assumenda, modi voluptate necessitatibus odit quis? Dicta vero odio repellat dolorum, vitae aliquid iste voluptas commodi? Voluptatem, dolor rerum.
+        Maiores corporis dolorum illo laudantium suscipit. Error beatae esse quia sapiente porro ut aperiam, voluptas nisi harum, quas et voluptatem sit placeat repellendus nemo facilis quod doloremque aut. Commodi, magni.
+    </p>
+    <div class="container">
+        <div class="list">
+            <h2>Classics</h2>
+            <ul>
+                <% for (let i=0; i<addedItem.length; i++) { %>
+                    <li> <%= addedItem [i] %> </li>
+                <% } %>
+            </ul>
+            <br>
+            <form method="post" action="/">
+                <input type="text" name="insertAct" placeholder="Book to add?">
+                <button type="submit">Add</button>
+            </form>
+            <br>
+            <br>
+        </div>
+    </div>
+
+    <%- include('footer'); -%>
+</body>
+</html>
